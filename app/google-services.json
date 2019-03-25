@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "1065695646631",
+    "firebase_url": "https://fiberbase-4b621.firebaseio.com",
+    "project_id": "fiberbase-4b621",
+    "storage_bucket": "fiberbase-4b621.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065695646631:android:9b5d2a587c5237da",
+        "android_client_info": {
+          "package_name": "com.pritam.crashanalytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065695646631-a37q4qi0b1c524us2fdt3mf24g22c9lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGOJQcqnxf2IGT-UxYHKZFvQYyqWHzudA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065695646631:android:bd80562723a143fd",
+        "android_client_info": {
+          "package_name": "com.pritam.myappfcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065695646631-a37q4qi0b1c524us2fdt3mf24g22c9lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGOJQcqnxf2IGT-UxYHKZFvQYyqWHzudA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065695646631:android:2fa05edb7df3ac7c",
+        "android_client_info": {
+          "package_name": "com.pritam.mynotify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065695646631-a37q4qi0b1c524us2fdt3mf24g22c9lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGOJQcqnxf2IGT-UxYHKZFvQYyqWHzudA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065695646631:android:a4ffb6d110652d48",
+        "android_client_info": {
+          "package_name": "com.pritam.myworldapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065695646631-a37q4qi0b1c524us2fdt3mf24g22c9lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGOJQcqnxf2IGT-UxYHKZFvQYyqWHzudA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
