@@ -1,0 +1,36 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FCM",
+		"_postman_id": "edf8c862-7850-578c-2008-570bc53535f1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://fcm.googleapis.com/fcm/send work",
+			"request": {
+				"url": "https://fcm.googleapis.com/fcm/send",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "key=AAAA-CBpE6c:APA91bEt7era5ur9lpyeKllap3qYnxnR7EULiB81q84xneudea4fLH3OF3hhfq1GiKWdR7HhVFZqTqXGvNLOYBco3IejDcJW0cVDMTDyYOFV73OWt_YuxFOnGtEbWAlGjrWgiNwQuoobGnCpM4sT43lC80n-KL5Keg",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"to\":\"deviceToken=cj629U7tt1g:APA91bFnxNpTewI6gP1lbMz0nIIoKRA8IAG7nFrE0RxnjYy9COV8rqv-wHYZ-5uh2j8TBXmcPY96Hu16faqBbTQP8g29Kai8ypxEbfqEfPBDa1UP2Pwy5qVZeU0KvkRxyWmULYXIiMGm\",\r\n   \"priority\":\"high\",\r\n   \"notification\":{  \r\n      \"title\":\"Pritam Notification\",\r\n      \"body\":\"Pritam is Happy with FCM!\"\r\n   },\r\n   \"data\":{  \r\n      \"Key-1\":\"JSA Data 1\",\r\n      \"Key-2\":\"JSA Data 2\",\r\n      \"Key-3\":\"JSA Data 3\"\r\n   }\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
