@@ -1,34 +1,78 @@
 {
-	"variables": [],
 	"info": {
-		"name": "FCM",
-		"_postman_id": "edf8c862-7850-578c-2008-570bc53535f1",
-		"description": "",
+		"_postman_id": "0c2ac977-d3c5-4ee0-9ad2-0732dcf4bdd6",
+		"name": "FCMAndroid",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
+			"name": "http://localhost:8080/sendFCM/send?deviceToken=cj629U7tt1g:APA91bFnxNpTewI6gP1lbMz0nIIoKRA8IAG7nFrE0RxnjYy9COV8rqv-wHYZ-5uh2j8TBXmcPY96Hu16faqBbTQP8g29Kai8ypxEbfqEfPBDa1UP2Pwy5qVZeU0KvkRxyWmULYXIiMGm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/sendFCM/send?deviceToken=cj629U7tt1g:APA91bFnxNpTewI6gP1lbMz0nIIoKRA8IAG7nFrE0RxnjYy9COV8rqv-wHYZ-5uh2j8TBXmcPY96Hu16faqBbTQP8g29Kai8ypxEbfqEfPBDa1UP2Pwy5qVZeU0KvkRxyWmULYXIiMGm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sendFCM",
+						"send"
+					],
+					"query": [
+						{
+							"key": "deviceToken",
+							"value": "cj629U7tt1g:APA91bFnxNpTewI6gP1lbMz0nIIoKRA8IAG7nFrE0RxnjYy9COV8rqv-wHYZ-5uh2j8TBXmcPY96Hu16faqBbTQP8g29Kai8ypxEbfqEfPBDa1UP2Pwy5qVZeU0KvkRxyWmULYXIiMGm"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "https://fcm.googleapis.com/fcm/send work",
 			"request": {
-				"url": "https://fcm.googleapis.com/fcm/send",
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
+						"value": "application/json"
 					},
 					{
 						"key": "Authorization",
-						"value": "key=AAAA-CBpE6c:APA91bEt7era5ur9lpyeKllap3qYnxnR7EULiB81q84xneudea4fLH3OF3hhfq1GiKWdR7HhVFZqTqXGvNLOYBco3IejDcJW0cVDMTDyYOFV73OWt_YuxFOnGtEbWAlGjrWgiNwQuoobGnCpM4sT43lC80n-KL5Keg",
-						"description": ""
+						"value": "key=AAAA-CBpE6c:APA91bEt7era5ur9lpyeKllap3qYnxnR7EULiB81q84xneudea4fLH3OF3hhfq1GiKWdR7HhVFZqTqXGvNLOYBco3IejDcJW0cVDMTDyYOFV73OWt_YuxFOnGtEbWAlGjrWgiNwQuoobGnCpM4sT43lC80n-KL5Keg"
 					}
 				],
 				"body": {
 					"mode": "raw",
 					"raw": "{  \r\n   \"to\":\"deviceToken=cj629U7tt1g:APA91bFnxNpTewI6gP1lbMz0nIIoKRA8IAG7nFrE0RxnjYy9COV8rqv-wHYZ-5uh2j8TBXmcPY96Hu16faqBbTQP8g29Kai8ypxEbfqEfPBDa1UP2Pwy5qVZeU0KvkRxyWmULYXIiMGm\",\r\n   \"priority\":\"high\",\r\n   \"notification\":{  \r\n      \"title\":\"Pritam Notification\",\r\n      \"body\":\"Pritam is Happy with FCM!\"\r\n   },\r\n   \"data\":{  \r\n      \"Key-1\":\"JSA Data 1\",\r\n      \"Key-2\":\"JSA Data 2\",\r\n      \"Key-3\":\"JSA Data 3\"\r\n   }\r\n}"
 				},
-				"description": ""
+				"url": "https://fcm.googleapis.com/fcm/send"
+			},
+			"response": []
+		},
+		{
+			"name": "https://fcm.googleapis.com/fcm/send multiple",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "key=AAAA-CBpE6c:APA91bEt7era5ur9lpyeKllap3qYnxnR7EULiB81q84xneudea4fLH3OF3hhfq1GiKWdR7HhVFZqTqXGvNLOYBco3IejDcJW0cVDMTDyYOFV73OWt_YuxFOnGtEbWAlGjrWgiNwQuoobGnCpM4sT43lC80n-KL5Keg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"registration_ids\":[\"cj629U7tt1g:APA91bFnxNpTewI6gP1lbMz0nIIoKRA8IAG7nFrE0RxnjYy9COV8rqv-wHYZ-5uh2j8TBXmcPY96Hu16faqBbTQP8g29Kai8ypxEbfqEfPBDa1UP2Pwy5qVZeU0KvkRxyWmULYXIiMGm\", \"fYuJsChHHTs:APA91bEZ4GghLxYgKjICO8o0-w6rIi4T_qqrHVgndFjCDMmZEgK5NVbaEGdqIv36bDZFInITq1QlbY5WUYmA5EStQvNyzL4LUy1q2Hy08kl1DsR8bqmI4k_rmaSzv_-cDnCDjVXkj2Ro\", \"fVO8Ln5Hdt0:APA91bGjOkzmV9wsaNJHjq8e_dh-ELaa85H5draNYadS9E1vL8x1NI4-yDtRMsAw5eOgknASO3YLQ6ZEswzMpis4gwxV7nvl2MJITMr6QNlnF2ShO3PVyNapdNSmImg9vyB-AWou4NUX\"],\r\n   \"priority\":\"high\",\r\n   \"notification\":{  \r\n      \"title\":\"Pritam Multiple Notification\",\r\n      \"body\":\"Pritam is Very Very Happy with FCM!\"\r\n   },\r\n   \"data\":{  \r\n      \"Key-1\":\"JSA Data 1\",\r\n      \"Key-2\":\"JSA Data 2\",\r\n      \"Key-3\":\"JSA Data 3\"\r\n   }\r\n}"
+				},
+				"url": "https://fcm.googleapis.com/fcm/send"
 			},
 			"response": []
 		}

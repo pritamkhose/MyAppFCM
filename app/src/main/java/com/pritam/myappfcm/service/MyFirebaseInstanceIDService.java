@@ -19,21 +19,21 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     public void onTokenRefresh() {
 
         //For registration of token
-        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        String deviceToken = FirebaseInstanceId.getInstance().getToken();
 
         //To displaying token on logcat
-        Log.d("TOKEN: ", refreshedToken);
+        Log.d("TOKEN: ", deviceToken);
 
         // TODO: Implement this method to send any registration to your app's servers.
-        sendRegistrationToServer(refreshedToken);
+        sendRegistrationToServer(deviceToken);
 
     }
 
-    private void sendRegistrationToServer(String refreshedToken) {
+    private void sendRegistrationToServer(String deviceToken) {
         SharedPrefUtils sh = new SharedPrefUtils(this);
-        sh.saveSharedPrefString("refreshedToken", refreshedToken);
-        String refreshedToken1 = sh.getSharedPrefString("refreshedToken");
-        Log.d("refreshedToken -->", refreshedToken1);
+        sh.saveSharedPrefString("deviceToken", deviceToken);
+        String deviceToken1 = sh.getSharedPrefString("deviceToken");
+        Log.d("deviceToken -->", deviceToken1);
     }
 
 }
